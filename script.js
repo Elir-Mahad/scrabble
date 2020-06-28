@@ -1,69 +1,80 @@
+// This is J.S code for the game. There are 10 levels in this game. Most of the code is being repeated for each level with a few alterations.
+// The first level has the explanations for each line of code.
+
 // first level below
 
-$('.leveloneform').on('mouseenter', () => { 
+$('.leveloneform').on('mouseenter', () => {             // when the mouse enters the form areas
 
-    $(".leveloneform").off('mouseenter');
+    $(".leveloneform").off('mouseenter');               // turn of the event listener mouseenter
 
-    let seconds = 14;
+    let seconds = 14;                                   // the variable seconds stores the value '14 seconds'    
 
-    const countdown = window.setInterval(function() {  
+    const countdown = window.setInterval(function() {   // this function contains all the things that will happen once the timer begins counting down        
 
-        seconds = seconds - 1;
+        seconds = seconds - 1;                          // change the value of the variable seconds to the orignal value (14) minus 1       
 
-        $('.timerone').text(seconds);
+        $('.timerone').text(seconds);                   // display the value of the variable seconds in the element with the class .timerone        
 
-        if (seconds <=14) { 
+        if (seconds <=14) {                             //  if the timer is under 14 seconds           
             
-            $('.levelone').css('background','black');
+            $('.levelone').css('background','black');   // make the background color black            
         }
 
-        if (seconds <=12) { 
+        if (seconds <=12) {                             // if the timer is under 12 seconds            
             
-            $('.levelone').css('background','darkred');
-            $('.picone').css('filter','invert(100%)');
+            $('.levelone').css('background','darkred'); // make the background color dark red  
+            
+            $('.picone').css('filter','invert(100%)');  // invert the color of the picture            
 
         }
 
-        if (seconds <=10) { 
+        if (seconds <=10) {                             // if the timer is under 10 seconds 
             
-            $('.levelone').css('background','black');
-            $('.picone').css('filter','invert(0%)');
+            $('.levelone').css('background','black');   // make the background color black
+            
+            $('.picone').css('filter','invert(0%)');    // remove the invert (by making it 0%) and return the picture to its normal appearance 
 
         }
         
-        if (seconds <=8) { 
+        if (seconds <=8) {                              // if the timer is under 8 seconds
             
-            $('.levelone').css('background','darkred');
-            $('.picone').css('filter','invert(100%)');
-
-        }
-
-        if (seconds <=6) { 
-
-            $('.levelone').css('background','black');
-            $('.picone').css('filter','invert(0%)');
-
-        }
-
-        if (seconds <=4) { 
-
-            $('.levelone').css('background','darkred');
-            $('.picone').css('filter','invert(100%)');
-
-        }
-
-        if (seconds <=2) { 
-
-            $('.levelone').css('background','black');
-            $('.picone').css('filter','invert(0%)');
-
-        }
-
-        if (seconds == 0){
+            $('.levelone').css('background','darkred'); // make the background color dark red
             
-            clearInterval(countdown);
-            $('.levelone').css('display','none');
-            $('.failone').show();
+            $('.picone').css('filter','invert(100%)');  // invert the color of the picture            
+
+        }
+
+        if (seconds <=6) {                              // if the timer is under 6 seconds 
+
+            $('.levelone').css('background','black');   // make the background color black
+            
+            $('.picone').css('filter','invert(0%)');    // remove the invert (by making it 0%) and return the picture to its normal appearance 
+
+        }
+
+        if (seconds <=4) {                              // if the timer is under 4 seconds
+
+            $('.levelone').css('background','darkred'); // make the background color dark red
+            
+            $('.picone').css('filter','invert(100%)');  // invert the color of the picture 
+
+        }
+
+        if (seconds <=2) {                              // if the timer is under 2 seconds
+
+            $('.levelone').css('background','black');   // make the background color black
+            
+            $('.picone').css('filter','invert(0%)');    // remove the invert (by making it 0%) and return the picture to its normal appearance 
+
+        }
+
+        if (seconds == 0){                              // if the timer is equal to 0 seconds
+            
+            clearInterval(countdown);                   // stop the countdown            
+            
+            $('.levelone').css('display','none');       //  remove the first level    
+            
+            $('.failone').show();                       //  show the div with the class failone (this only applies if the timer runs out and correct word hasn't been entered)           
 
         }
 
@@ -71,38 +82,36 @@ $('.leveloneform').on('mouseenter', () => {
 
 });
 
-$('.leveloneform').on('submit', function(e){
+$('.leveloneform').on('submit', function(e){            // when the submit button is pressed     
 
     e.preventDefault();
 
-    let userword = $('input[type=text]').val();
+    let userword = $('input[type=text]').val();         // the variable userword will store he word that was submitted by the user     
 
-    let numbaz = 0;
+    let numbaz = 0;                                     // the variable numbaz stores the value 0 (this is record the points, it will be clarified further down)
 
-    if (userword == 'individual') {
+    if (userword == 'individual') {                     // if the value thats stored in the variable userword is individual        
 
-        numbaz = numbaz + 1;
+        numbaz = numbaz + 1;                            // then add 1 to the value of the variable numbaz        
 
-        $('.count').text(numbaz);
+        $('.count').text(numbaz);                       // display the value of the variable numbaz (which is 1) in the element that has the class .count        
 
-        $('.displaywordone').show();
+        $('.displaywordone').show();                    // show the element that has the class .displaywordone (we are showing it here because it was previously hidden)         
 
-        $('.displaywordone').append(userword);
+        $('.displaywordone').append(userword);          // add the value that's stored in the variable userword to the element that has the class .displaywordone 
+                                                        // (that way the correct answer 'individual' will be displayed on the dom after the user submits it)       
 
-        $(".leveloneform").empty();
+        $(".leveloneform").empty();                     // empty leveloneform (this will ensure that the browser does not remember the word that was entered previously)        
 
-        $(".boxone").hide();
+        $(".boxone").hide();                            // hide the div with the class boxone (this will remove the whole first level)        
 
-        $(".boxtwo").show();
-
-        // console.log("level one correct answer")
+        $(".boxtwo").show();                            // show the div with the class boxtwo (this will show the next level)        
 
     } else {
     
-        $(".wrong").show(1500);
-        $(".wrong").hide(1500);
-
-        // console.log("level one wrong answer")
+        $(".wrong").show(1500);                         // when the wrong answer is entered show the element that has the class .wrong in the speed of 1500
+        
+        $(".wrong").hide(1500);                         // then hide the same element         
     
     }
 
