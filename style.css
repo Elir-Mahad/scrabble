@@ -1,0 +1,1062 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Below are the general styles - linking different fonts to their elements. */
+
+body,
+ul,
+h1,
+h2,
+h3
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Delius', cursive;
+    background-color:black;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* intro */
+
+.intro{
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+    color:white;
+    font-size:3rem;
+    text-align: center;
+    margin-top:2rem;
+    margin-right:10rem;
+    margin-left:10rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.intro h1{
+    border-radius: 3rem;
+    color:red;
+}
+
+.intro p{
+    margin:1rem;
+    font-size:3rem;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    font-size:3rem;
+    text-align: center;
+    background-color:white;
+    color:red;
+    width: 20rem;
+    display: block;
+    margin:auto;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    margin-top:4rem;
+    margin-bottom:4rem;
+    border-radius: 1rem;
+}
+
+.score span{
+    background-color:black;
+    padding:0.5rem;
+    color:white;
+    font-size:4rem;
+}
+
+/* game styles */
+
+.levelone,
+.leveltwo,
+.levelthree,
+.levelfour,
+.levelfive,
+.levelsix,
+.levelseven,
+.leveleight,
+.levelnine,
+.levelten {
+    font-size:7rem;
+    text-align: center;
+}
+
+/* .boxone, */
+.boxtwo,
+.boxthree,
+.boxfour,
+.boxfive,
+.boxsix,
+.boxseven,
+.boxeight,
+.boxnine,
+.boxten {
+    display: none;
+}
+
+.timerone,
+.timertwo,
+.timerthree,
+.timerfour,
+.timerfive,
+.timersix,
+.timerseven,
+.timereight,
+.timernine,
+.timerten {
+    margin-bottom:0rem;
+    padding:2rem;
+    font-size:3rem;
+    background-color:lightblue;
+}
+
+.levelnum img{
+    height: 40rem;
+    width: 33rem;
+}
+
+.imagetimer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:3rem;
+}
+
+.timer{
+    height: 100%;
+    width: 30rem;
+    background-color:black;
+    color:white;
+    border:2px solid white;
+    text-align:center;
+    border-radius: 3rem;
+    font-size:20rem;
+    margin:0rem;
+    align-self:center;
+    padding-right:0rem;
+    padding-left:0rem;
+    padding-bottom:0rem;
+    padding-top:0rem;
+    text-align: center;
+}
+
+.letters{
+    padding:1rem;
+    width:35rem;
+    margin-bottom:3rem;
+}
+
+.container .search-bar {
+    font-size: 3rem;
+    margin-bottom:3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .typeword{
+    width: 40%;
+    height:6rem;
+    display: block;
+    margin:auto;
+}
+
+.container .submit {
+    width: 20%;
+    height:6rem;
+    display: block;
+    margin:auto;
+    margin-top:2rem;
+}
+
+.container .search-bar input{
+    text-align: center;
+    background-color:white;
+    padding: 0.5rem;
+    border:transparent;
+    border-radius: 1rem;
+    border:3px solid purple;
+}
+
+.container .wrong{
+    color:red;   
+    background-color:white;
+    width: 40rem;
+    display: block;
+    margin:auto;
+    font-size:4rem;
+    margin-bottom:0.5rem;
+    display: none;
+}
+
+
+.displaywords{
+    margin-top:0rem;
+    margin-bottom:-3rem; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.displaywords p{
+    text-align: center;
+    font-size:2rem;
+    color:white;
+    padding:1rem;
+    border:1px solid red;
+    display: none;
+}
+
+.retry,
+.gameover {
+    display: none;
+}
+
+
+.retry .image img,
+.gameover .image img{
+    width:40rem;
+    display: block;
+    margin:auto;
+}
+
+.retry .words,
+.gameover .words{
+    text-align: center;
+    color:white;
+    font-size:3rem;
+    margin-bottom:3rem;
+}
+
+.gameover .words {
+    width: 60%;
+    display: block;
+    margin:auto;
+}
+
+.retry button{
+    color:red;  
+    padding:1.5rem;
+    border-radius: 3rem;
+    border:transparent;
+}
+
+.retry button:hover{
+    background-color:darkred;
+    color:black;
+}
+
+footer{
+    color:white;
+    text-align: center;
+    width:100%;
+    margin-top:2rem;
+    padding-top:0.5rem;
+    font-size:2rem;
+}
+
+/* animation */
+
+@keyframes firstfour 
+
+        {
+            0%   {background-color:red; left:330px; top:0px;}
+            50%  {background-color:blue; left:520px; top:000px;}
+            100% {background-color:red; left:330px; top:0px;}
+        }
+
+        .lettersone {
+            position: relative;
+            animation: firstfour 3s infinite linear;
+        }
+
+        .letterstwo {
+            position: relative;
+            animation: firstfour 2s infinite linear;
+        }
+
+        .lettersthree {
+            position: relative;
+            animation: firstfour 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            position: relative;
+            animation: firstfour 1s infinite linear;
+        }
+
+        
+@keyframes nextfour 
+        
+        {
+            0%   {background-color:red; left:330px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:520px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:330px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            position: relative;
+            animation: nextfour 3s infinite linear;
+        }
+
+        .letterssix {
+            position: relative;
+            animation: nextfour 2s infinite linear;
+        }
+
+        .lettersseven {
+            position: relative;
+            animation: nextfour 1.5s infinite linear;
+        }
+
+        .letterseight {
+            position: relative;
+            animation: nextfour 1s infinite linear;
+        }
+
+@keyframes lasttwo 
+
+        {
+            0%   {background-color:red; left:330px; top:0px;}
+            50%  {background-color:blue; left:520px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:330px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            position: relative;
+            animation: lasttwo 3s infinite linear;
+        }
+
+        .lettersten {
+            position: relative;
+            animation: lasttwo 2s infinite linear;
+        }
+
+/* media queries */
+
+@media (max-width:1024px) { 
+    
+        .intro{
+            display: block;
+            margin:auto;
+            margin-top:2rem;
+        }
+        
+        .imagetimer {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .imagetimer img,
+        .imagetimer .timer {
+            margin-bottom:2rem;    
+        }
+
+        .letters{
+            width: 30rem;
+        }
+    
+    @keyframes firstfour1024 
+
+        {
+            0%   {background-color:red; left:250px; top:0px;}
+            50%  {background-color:blue; left:470px; top:000px;}
+            100% {background-color:red; left:250px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour1024 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour1024 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour1024 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour1024 1s infinite linear;
+        }
+    
+    @keyframes nextfour1024 
+        
+        {
+            0%   {background-color:red; left:250px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:470px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:250px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour1024 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour1024 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour1024 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour1024 1s infinite linear;
+        }
+
+@keyframes lasttwo1024 
+
+        {
+            0%   {background-color:red; left:250px; top:0px;}
+            50%  {background-color:blue; left:470px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:250px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo1024 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo1024 2s infinite linear;
+        }
+
+}
+
+@media (max-width:834px) { 
+    
+    @keyframes firstfour834 
+
+        {
+            0%   {background-color:red; left:150px; top:0px;}
+            50%  {background-color:blue; left:390px; top:000px;}
+            100% {background-color:red; left:150px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour834 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour834 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour834 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour834 1s infinite linear;
+        }
+    
+    @keyframes nextfour834 
+        
+        {
+            0%   {background-color:red; left:150px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:390px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:150px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour834 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour834 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour834 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour834 1s infinite linear;
+        }
+
+@keyframes lasttwo834 
+
+        {
+            0%   {background-color:red; left:150px; top:0px;}
+            50%  {background-color:blue; left:390px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:150px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo834 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo834 2s infinite linear;
+        }
+
+}
+
+
+@media (max-width:768px) { 
+    
+    
+    @keyframes firstfour768 
+
+        {
+            0%   {background-color:red; left:115px; top:0px;}
+            50%  {background-color:blue; left:350px; top:000px;}
+            100% {background-color:red; left:115px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour768 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour768 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour768 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour768 1s infinite linear;
+        }
+    
+    @keyframes nextfour768 
+        
+        {
+            0%   {background-color:red; left:115px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:350px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:115px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour768 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour768 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour768 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour768 1s infinite linear;
+        }
+
+@keyframes lasttwo768 
+
+        {
+            0%   {background-color:red; left:115px; top:0px;}
+            50%  {background-color:blue; left:350px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:115px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo768 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo768 2s infinite linear;
+        }
+
+}
+
+@media (max-width:600px) { 
+    
+        .imagetimer .timer{
+            font-size:15rem;
+            width: 20rem;
+        }
+        
+        .letters{
+            font-size:5rem;
+        }
+        
+        .gameover .words{
+            width: 85%;
+            font-size:2.5rem;
+        }
+        
+        .gameover .image img,
+        .retry .image img{
+            width: 30rem;
+        }
+        
+        .container .typeword{
+            width: 60%;
+        }
+        
+        .container .submit{
+            width: 30%;
+        }
+    
+    @keyframes firstfour600 
+
+        {
+            0%   {background-color:red; left:50px; top:0px;}
+            50%  {background-color:blue; left:250px; top:000px;}
+            100% {background-color:red; left:50px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour600 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour600 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour600 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour600 1s infinite linear;
+        }
+    
+    @keyframes nextfour600 
+        
+        {
+            0%   {background-color:red; left:50px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:250px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:50px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour600 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour600 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour600 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour600 1s infinite linear;
+        }
+
+@keyframes lasttwo600 
+
+        {
+            0%   {background-color:red; left:50px; top:0px;}
+            50%  {background-color:blue; left:250px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:50px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo600 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo600 2s infinite linear;
+        }
+
+}
+
+@media (max-width:414px) { 
+    
+        .intro p{
+            font-size:2.7rem;
+        }
+        
+        .container .typeword{
+            width: 70%;
+        }
+        
+        .container .submit{
+            width: 40%;
+        }
+    
+    @keyframes firstfour414 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:90px; top:000px;}
+            100% {background-color:red; left:20px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour414 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour414 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour414 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour414 1s infinite linear;
+        }
+    
+    @keyframes nextfour414 
+        
+        {
+            0%   {background-color:red; left:20px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:90px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:20px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour414 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour414 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour414 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour414 1s infinite linear;
+        }
+
+@keyframes lasttwo414 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:90px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:20px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo414 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo414 2s infinite linear;
+        }
+
+}
+
+@media (max-width:384px) {
+    
+        .intro p{
+            font-size:2.5rem;
+        }
+        
+        .imagetimer img{
+            width: 25rem;
+            height:30rem;
+        }
+        
+        .imagetimer .timer{
+            font-size:12rem;
+            width: 15rem;
+        }
+        
+        .letters {
+            font-size:4rem;
+            width: 20rem;
+        }
+    
+    
+    @keyframes firstfour384 
+
+        {
+            0%   {background-color:red; left:30px; top:0px;}
+            50%  {background-color:blue; left:155px; top:000px;}
+            100% {background-color:red; left:30px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour384 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour384 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour384 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour384 1s infinite linear;
+        }
+    
+    @keyframes nextfour384 
+        
+        {
+            0%   {background-color:red; left:30px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:155px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:30px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour384 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour384 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour384 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour384 1s infinite linear;
+        }
+
+@keyframes lasttwo384 
+
+        {
+            0%   {background-color:red; left:30px; top:0px;}
+            50%  {background-color:blue; left:155px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:30px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo384 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo384 2s infinite linear;
+        }
+
+}
+
+@media (max-width:375px) {
+    
+    @keyframes firstfour375 
+
+        {
+            0%   {background-color:red; left:30px; top:0px;}
+            50%  {background-color:blue; left:145px; top:000px;}
+            100% {background-color:red; left:30px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour375 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour375 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour375 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour375 1s infinite linear;
+        }
+    
+    @keyframes nextfour375 
+        
+        {
+            0%   {background-color:red; left:30px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:145px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:30px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour375 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour375 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour375 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour375 1s infinite linear;
+        }
+
+@keyframes lasttwo375 
+
+        {
+            0%   {background-color:red; left:30px; top:0px;}
+            50%  {background-color:blue; left:145px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:30px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo375 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo375 2s infinite linear;
+        }
+
+}
+
+
+@media (max-width:360px) {
+
+    
+    @keyframes firstfour360 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:135px; top:000px;}
+            100% {background-color:red; left:20px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour360 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour360 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour360 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour360 1s infinite linear;
+        }
+    
+    @keyframes nextfour360 
+        
+        {
+            0%   {background-color:red; left:20px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:135px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:20px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour360 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour360 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour360 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour360 1s infinite linear;
+        }
+
+@keyframes lasttwo360 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:135px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:20px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo360 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo360 2s infinite linear;
+        }
+
+}
+
+@media (max-width:320px) {
+
+        .intro p{
+            font-size:2.3rem;
+        }
+        
+        .container .search-bar{
+            font-size:2.5rem;
+        }
+        
+        .container .typeword{
+            width: 80%;
+        }
+        
+        .container .submit{
+            width: 50%;
+        }
+        
+        @keyframes firstfour320 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:100px; top:000px;}
+            100% {background-color:red; left:20px; top:0px;}
+        }
+
+        .lettersone {
+            animation: firstfour320 3s infinite linear;
+        }
+
+        .letterstwo {
+            animation: firstfour320 2s infinite linear;
+        }
+
+        .lettersthree {
+            animation: firstfour320 1.5s infinite linear;
+        }
+
+        .lettersfour {
+            animation: firstfour320 1s infinite linear;
+        }
+    
+    @keyframes nextfour320 
+        
+        {
+            0%   {background-color:red; left:20px; top:0px;transform:rotate(-10deg)}
+            50%  {background-color:blue; left:100px; top:000px; transform:rotate(10deg)}
+            100% {background-color:red; left:20px; top:0px;transform:rotate(-10deg) }
+        }
+
+        .lettersfive {
+            animation: nextfour320 3s infinite linear;
+        }
+
+        .letterssix {
+            animation: nextfour320 2s infinite linear;
+        }
+
+        .lettersseven {
+            animation: nextfour320 1.5s infinite linear;
+        }
+
+        .letterseight {
+            animation: nextfour320 1s infinite linear;
+        }
+
+@keyframes lasttwo320 
+
+        {
+            0%   {background-color:red; left:20px; top:0px;}
+            50%  {background-color:blue; left:100px; top:000px; transform: scale(1)}
+            100% {background-color:red; left:20px; top:0px; transform: scale(-1)}
+        }
+
+        .lettersnine {
+            animation: lasttwo320 3s infinite linear;
+        }
+
+        .lettersten {
+            animation: lasttwo320 2s infinite linear;
+        }
+
+}

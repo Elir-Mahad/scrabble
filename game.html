@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this makes sure that the media queries work; without it the queries will not function -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Catch the word </title>
+
+	<!-- link to google fonts     -->
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet"> 
+
+	<!-- load in fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- link to styles -->
+	<link rel="stylesheet" href="https://Elir-Mahad.github.io/scrabble/style.css">
+	
+</head>
+
+<body>
+
+        <section class="intro">
+
+            <h1>Unstable Scrabble</h1>
+
+            <p>There are 10 words in this scrabble game </p>
+
+            <p>With each new level, the word either moves faster, or it alters its behavior. </p>
+
+            <p>You have 14 seconds to figure out the word.</p>
+
+        </section>
+
+        <section class="game">
+
+                <h3 class="score"> Points <span class="count">0</span></h3>
+
+            <div class="container wrapper">
+
+                <div class="boxone">
+
+                        <div class="levelone levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picone" src="https://Elir-Mahad.github.io/scrabble/assets/10.png">
+
+                                <p class="timerone timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersone letters">
+
+                                <a>D</a>
+                                <a>D</a>
+                                <a>A</a>
+                                <a>L</a>
+                                <a>I</a>
+                                <a>N</a>
+                                <a>I</a>
+                                <a>U</a>
+                                <a>V</a>
+                                <a>I</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="leveloneform" action="#">
+
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failone retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                        </div>
+
+                </div>
+
+                <div class="boxtwo">
+
+                        <div class="leveltwo levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="pictwo" src="https://Elir-Mahad.github.io/scrabble/assets/56.png">
+
+                                <p class="timertwo timer">14</p>
+
+                            </div>
+
+                            <ul class="letterstwo letters">
+
+                                <a>R</a>
+                                <a>W</a>
+                                <a>O</a>
+                                <a>E</a>
+                                <a>P</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="leveltwoform" action="#">
+
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+                    
+                        <div class="failtwo retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                        </div>
+
+                </div>
+
+                <div class="boxthree">
+
+                        <div class="levelthree levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picthree" src="https://Elir-Mahad.github.io/scrabble/assets/36.png">
+
+                                <p class="timerthree timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersthree letters">
+
+                                <a>A</a>
+                                <a>E</a>
+                                <a>E</a>
+                                <a>V</a>
+                                <a>L</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelthreeform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+                        
+                        <div class="failthree retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                        </div>
+    
+                </div>
+
+                <div class="boxfour">
+
+                        <div class="levelfour levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picfour" src="https://Elir-Mahad.github.io/scrabble/assets/39.png">
+
+                                <p class="timerfour timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersfour letters">
+
+                                <a>E</a>
+                                <a>T</a>
+                                <a>I</a>
+                                <a>B</a>
+                                <a>R</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelfourform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failfour retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                        </div>
+
+                </div>
+
+                <div class="boxfive">
+
+                        <div class="levelfive levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picfive" src="https://Elir-Mahad.github.io/scrabble/assets/37.png">
+
+                                <p class="timerfive timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersfive letters">
+
+                                <a>R</a>
+                                <a>H</a>
+                                <a>S</a>
+                                <a>E</a>
+                                <a>A</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelfiveform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failfive retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                        </div>
+    
+                </div>
+
+
+                <div class="boxsix">
+
+                        <div class="levelsix levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picsix" src="https://Elir-Mahad.github.io/scrabble/assets/25.png">
+
+                                <p class="timersix timer">14</p>
+
+                            </div>
+
+                            <ul class="letterssix letters">
+
+                                <a>H</a>
+                                <a>N</a>
+                                <a>E</a>
+                                <a>R</a>
+                                <a>G</a>
+                                <a>T</a>
+                                <a>T</a>
+                                <a>S</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelsixform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failsix retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+
+                        </div>
+
+                </div>
+
+
+                <div class="boxseven">
+
+                        <div class="levelseven levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picseven" src="https://Elir-Mahad.github.io/scrabble/assets/20.jpg">
+
+                                <p class="timerseven timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersseven letters">
+
+                                <a>H</a>
+                                <a>O</a>
+                                <a>O</a>
+                                <a>R</a>
+                                <a>N</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelsevenform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failseven retry">
+
+                                <div class="image">
+                                    <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                                </div>
+
+                                <div class="words">
+                                    <p>You need to be faster !!!</p>
+                                    <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                                </div>
+
+                        </div>
+
+                </div>
+
+                <div class="boxeight">
+
+                    <div class="leveleight levelnum">
+
+                        <div class="imagetimer">
+
+                            <img class="piceight" src="https://Elir-Mahad.github.io/scrabble/assets/74.jpg">
+
+                            <p class="timereight timer">14</p>
+
+                        </div>
+
+                        <ul class="letterseight letters">
+
+                            <a>S</a>
+                            <a>T</a>
+                            <a>R</a>
+                            <a>O</a>
+                            <a>C</a>
+                            <a>E</a>
+                            <a>S</a>
+                            <a>N</a>
+                            <a>A</a>
+
+                        </ul>
+
+                        <form autocomplete="off" class="leveleightform" action="#">        
+                            
+                            <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="faileight retry">
+
+                            <div class="image">
+                                <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                            </div>
+        
+                            <div class="words">
+                                <p>You need to be faster !!!</p>
+                                <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                            </div>
+        
+                    </div>
+
+                </div>
+
+                <div class="boxnine">
+
+                        <div class="levelnine levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picnine" src="https://Elir-Mahad.github.io/scrabble/assets/5 .png">
+
+                                <p class="timernine timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersnine letters">
+
+                                <a>E</a>
+                                <a>E</a>
+                                <a>N</a>
+                                <a>F</a>
+                                <a>D</a>
+                                <a>D</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="levelnineform" action="#"> 
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failnine retry">
+
+                                <div class="image">
+                                    <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                                </div>
+            
+                                <div class="words">
+                                    <p>You need to be faster !!!</p>
+                                    <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                                </div>
+            
+                        </div>
+
+                </div>
+
+                <div class="boxten">
+
+                        <div class="levelten levelnum">
+
+                            <div class="imagetimer">
+
+                                <img class="picten" src="https://Elir-Mahad.github.io/scrabble/assets/40.png">
+
+                                <p class="timerten timer">14</p>
+
+                            </div>
+
+                            <ul class="lettersten letters">
+
+                                <a>S</a>
+                                <a>R</a>
+                                <a>A</a>
+                                <a>D</a>
+                                <a>M</a>
+                                <a>E</a>
+
+                            </ul>
+
+                            <form autocomplete="off" class="leveltenform" action="#">        
+                                
+                                <div class="search-bar">
+
+                                    <p class="wrong">WRONG ANSWER</p>
+
+                                    <input class="typeword" type="text" placeholder="type word" id="search-input">
+
+                                    <input class="submit" type="submit" value="submit">
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="failten retry">
+
+                                <div class="image">
+                                    <img src="https://Elir-Mahad.github.io/scrabble/assets/access-denied.png">
+                                </div>
+            
+                                <div class="words">
+                                    <p>You need to be faster !!!</p>
+                                    <a href="https://Elir-Mahad.github.io/scrabble/index.html"> <button>Try Again</button></a>
+                                </div>
+            
+                        </div>
+
+                        <div class="gameover">
+
+                                <div class="image">
+                                    <img src="https://Elir-Mahad.github.io/scrabble/assets/game-over.png">
+                                </div>
+            
+                                <div class="words">
+                                    <p>Read top to bottom, bottom to top, left to right, right to left, backwards, forwards, and diagonally.</p>
+                                </div>
+            
+                        </div>
+
+                </div>
+
+                <div class="displaywords">
+
+                    <div class="firstgroup">
+                        <p class="displaywordone"></p>
+                        <p class="displaywordtwo"></p>
+                        <p class="displaywordthree"></p>
+                        <p class="displaywordfour"></p>
+                        <p class="displaywordfive"></p>
+                    </div>
+
+                    <div class="secondgroup">
+                        <p class="displaywordsix"></p>
+                        <p class="displaywordseven"></p>
+                        <p class="displaywordeight"></p>
+                        <p class="displaywordnine"></p>
+                        <p class="displaywordten"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="wrapper">
+
+            <p> © Mahad, 2020 - All Rights Reserved </p>
+
+            </div>
+
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	<script src="https://Elir-Mahad.github.io/scrabble/script.js"></script>
+
+</body>
+</html>
