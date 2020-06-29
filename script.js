@@ -82,7 +82,7 @@ $('.leveloneform').on('mouseenter', () => {             // when the mouse enters
 
 });
 
-$('.leveloneform').on('.submitone', function(e){            // when the submit button is pressed     
+$('.leveloneform').on('submit', function(e){            // when the submit button is pressed     
 
     e.preventDefault();
 
@@ -101,7 +101,7 @@ $('.leveloneform').on('.submitone', function(e){            // when the submit b
         $('.displaywordone').append(userword);          // add the value that's stored in the variable userword to the element that has the class .displaywordone 
                                                         // (that way the correct answer 'individual' will be displayed on the dom after the user submits it)       
 
-        $(".leveloneform").empty();                     // empty leveloneform (this will ensure that the browser does not remember the word that was entered previously)        
+//         $(".leveloneform").empty();                     // empty leveloneform (this will ensure that the browser does not remember the word that was entered previously)        
 
         $(".boxone").hide();                            // hide the div with the class boxone (this will remove the whole first level)        
 
