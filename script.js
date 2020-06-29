@@ -82,7 +82,7 @@ $('.leveloneform').on('mouseenter', () => {             // when the mouse enters
 
 });
 
-$('.leveloneform').click('submit', function(e){            // when the submit button is pressed     
+$('.leveloneform').click('.submit', function(e){            // when the submit button is pressed     
 
     e.preventDefault();
 
