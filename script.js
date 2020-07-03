@@ -91,7 +91,8 @@ $('.leveloneform').on('submit', function(e){            // when the submit butto
     let numbaz = 0;                                     // the variable numbaz stores the value 0 (this is record the points, it will be clarified further down)
 
 //     if (userword == 'individual') {                     // if the value thats stored in the variable userword is individual
-       if (userword.toLowerCase().trim() == "individual") {
+       
+        if (userword.toLowerCase().trim() == "individual") {
 
         numbaz = numbaz + 1;                            // then add 1 to the value of the variable numbaz        
 
@@ -200,7 +201,9 @@ $('.leveltwoform').on('submit', function(e){
 
     let numbaz = 1;
 
-    if (userword == 'power') {
+//     if (userword == 'power') {
+    
+        if (userword.toLowerCase().trim() == "power") {
 
         numbaz = numbaz + 1;
         
@@ -310,7 +313,9 @@ $('.levelthreeform').on('submit', function(e){
 
     let numbaz = 2;
 
-    if (userword == 'leave') {
+//     if (userword == 'leave') {
+    
+        if (userword.toLowerCase().trim() == "leave") {
 
         numbaz = numbaz + 1;
 
@@ -421,7 +426,9 @@ $('.levelfourform').on('submit', function(e){
 
     let numbaz = 3;
 
-        if (userword == 'tribe') {
+//         if (userword == 'tribe') {
+    
+            if (userword.toLowerCase().trim() == "tribe") {
 
             numbaz = numbaz + 1;
 
@@ -532,7 +539,9 @@ $('.levelfiveform').on('submit', function(e){
 
     let numbaz = 4;
 
-        if (userword == 'share') {
+//         if (userword == 'share') {
+    
+            if (userword.toLowerCase().trim() == "share") {
 
             numbaz = numbaz + 1;
 
@@ -643,7 +652,9 @@ $('.levelsixform').on('submit', function(e){
 
     let numbaz = 5;
 
-        if (userword == 'strenght') {
+//         if (userword == 'strenght') {
+    
+            if (userword.toLowerCase().trim() == "strenght") {
 
             numbaz = numbaz + 1;
 
@@ -754,7 +765,9 @@ $('.levelsevenform').on('submit', function(e){
 
     let numbaz = 6;
 
-        if (userword == 'honor') {
+//         if (userword == 'honor') {
+    
+            if (userword.toLowerCase().trim() == "honor") {
 
             numbaz = numbaz + 1;
 
@@ -865,7 +878,9 @@ $('.leveleightform').on('submit', function(e){
 
     let numbaz = 7;
 
-        if (userword == 'ancestors') {
+//         if (userword == 'ancestors') {
+    
+            if (userword.toLowerCase().trim() == "ancestors") {
 
             numbaz = numbaz + 1;
 
@@ -976,7 +991,9 @@ $('.levelnineform').on('submit', function(e){
 
     let numbaz = 8;
 
-        if (userword == 'defend') {
+//         if (userword == 'defend') {
+    
+            if (userword.toLowerCase().trim() == "defend") {
 
             numbaz = numbaz + 1;
 
@@ -1087,7 +1104,9 @@ $('.leveltenform').on('submit', function(e){
 
     let numbaz = 9;
 
-        if (userword == 'dreams') {
+//         if (userword == 'dreams') {
+    
+            if (userword.toLowerCase().trim() == "dreams") {
 
             numbaz = numbaz + 1;
 
