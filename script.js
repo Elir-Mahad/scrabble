@@ -90,7 +90,8 @@ $('.leveloneform').on('submit', function(e){            // when the submit butto
 
     let numbaz = 0;                                     // the variable numbaz stores the value 0 (this is record the points, it will be clarified further down)
 
-    if (userword == 'individual') {                     // if the value thats stored in the variable userword is individual        
+//     if (userword == 'individual') {                     // if the value thats stored in the variable userword is individual
+       if (userword.toLowerCase().trim() == "individual") {
 
         numbaz = numbaz + 1;                            // then add 1 to the value of the variable numbaz        
 
